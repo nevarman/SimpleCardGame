@@ -116,9 +116,10 @@ public class Game : EventReceiverBehaviour
         // we have thrown card
         if (card.number == _lastThrownCard.number)
         {
-            if (_thrownDeck.Count == 1)
+            if (_thrownDeck.Count == 2)
             {
                 // Pisti take it 
+                Debug.Log("Pisti");
                 CurrentScore += 10;
                 TakeCardsForCurrentPlayer();
                 return;
